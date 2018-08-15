@@ -192,7 +192,7 @@ head {
   <script src="finalproject.js"></script>
   <div id = "soup">
 	<h3>This game is a look into living with mental illness and the struggles that comes with it. This will also help viewers to familiarize with the following symptoms presnted in the game. Not only would it would help players become familiar with the given scenarios, but also encourage them to aid those who suffer from it if they're able to.</h3>
-  <h4><p class="w3-center">Created by Jillian Jacinto, Shona Mubataripi, Nadia Pryce</p></h4>
+  <h4><p class="w3-center">Created by Jillian Jacinto, Shona Mubataripi, Nadia Prycefi</p></h4>
   <p>Press 'Ok' to proceed.</p>
   </div>
 <div class="modal-footer"><div>
@@ -1028,7 +1028,9 @@ As you lie in bed that night, you think, "Tomorrow is a new day, probably simila
         dattnp.style.display = "block";
         gr.style.display = 'none';
         fr.style.display = 'none';
-        ttc.style.display = 'none';}
+        ttc.style.display = 'none';
+        cnp.style.display = 'none';
+        document.getElementById("attempttottalk_nopills").style.display = 'none';}
     }
 
   </script>
@@ -1036,7 +1038,7 @@ As you lie in bed that night, you think, "Tomorrow is a new day, probably simila
     "Yes there is something I would like to talk about actually well..." <br>
     *What are you doing? You're worthless. She does not care about you. I told you to never tell anyone. You remember last time right? Those doctors just gave you pills that don't even work. You'll just pull them down, like you always do. You need to shut up*<br>
     (click the button below until you're able to tell her the truth or give up)<br>
-    <button class="block" onclick="clickCounter1()">admit</button>
+    <button class="block" onclick="clickCounter1()">admit</button><br>
     <button class="block" onclick="dontattempttottalk_nopills()">give up</button>
   </p>
   <div id="result"></div>
