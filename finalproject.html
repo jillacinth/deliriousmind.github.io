@@ -1,0 +1,1577 @@
+<html>
+<title>Delirious Mind</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"><!DOCTYPE html>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://media.giphy.com/media/JbgAw7yqBoYw0/giphy.gif');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.block:hover {
+  background-color: #3e8e41;
+  opacity: 100;
+  color: white;
+}
+
+.block:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.button {
+  background-color: #ddd;
+  opacity: 0.5;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+  opacity: 100;
+  color: white;
+}
+
+.button {
+    position: relative;
+    background-color: #ddd;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: lightgray;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;
+background-color: gray;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: darkgray;
+    color: white;
+}
+
+head {
+  font-family: couriernew;
+}
+
+</style>
+<head>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<h1 class="w3-display-container w3-content w3-topright" style="max-width:1400px;">
+</h1>
+  <div class="w3-display-middle">
+    <h1 class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Delirious Mind</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:75%">
+    <p class="w3-large w3-center">A Game About the Struggle of Having a Mental Illness</p>
+    <div style="text-align:center;">
+      <button id="myBtn" class="button">Start</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Delirious Mind</h2>
+    </div>
+    <div class="modal-body">
+    <div class="modal-footer">
+      <head>
+  <script src="finalproject.js"></script>
+  <div id = "soup">
+	<h3>This game is a look into living with mental illness and the struggles that comes with it. This will also help viewers to familiarize with the following symptoms presnted in the game. Not only would it would help players become familiar with the given scenarios, but also encourage them to aid those who suffer from it if they're able to.</h3>
+  <h4><p class="w3-center">Created by Jillian Jacinto, Shona Mubataripi, Nadia Pryce</p></h4>
+  <p>Press 'Ok' to proceed.</p>
+  </div>
+<div class="modal-footer"><div>
+</head>
+<body>
+	<p>
+		<button class="block" id="pregame" onclick="startbutton()">Ok</button>
+	</p>
+	<script>
+    var state = 0;
+
+		function startbutton() {
+	    	var x = document.getElementById("gamestart");
+        var p = document.getElementById("pregame");
+        if(state == 0) {
+          document.getElementById("soup").style.display = 'none';
+          x.style.display = 'block';
+          p.style.display = 'none';}
+		}
+
+	</script>
+
+	<div id="gamestart" style="display:none">
+  <!--  <p action="/action_page.php">
+      What is your name? <input type="text" name="whatisname" value="Name"><br>
+    <input type="submit" value="Submit">
+  </p>-->
+  <p>
+      It’s Monday morning. At 6:00 am, you hear your phone alarm go off. You wake up with crust in your eyes and exhausted from the restless night. Should you get out of bed?<br>
+      <button class= "block" onclick="getup()">Yes</button><br>
+      <button class= "block" onclick="stayinbed()">No</button>
+    </p>
+  </div>
+
+  <script>
+    var up = 0
+    var bed = 0
+
+    function getup() {
+      var w = document.getElementById("wakeywakey");
+      var x = document.getElementById("gamestart");
+      if(up == 0) {
+        w.style.display = 'block';
+        x.style.display = 'none';}
+     }
+
+     function stayinbed() {
+       var s = document.getElementById("sleepysleepy");
+       var x = document.getElementById("gamestart");
+       if(bed == 0) {
+         s.style.display = 'block';
+         x.style.display = 'none';}
+      }
+  </script>
+
+  <p id="wakeywakey" style="display:none">
+    You turn to sit up and rub the crust out of your eyes. Your head sort of droops down, forcing you to look down at your feet and you sigh already dreading the day that has yet to start. You pull up your head up and finally step onto the carpeted floor, feeling the same rough texture as you do every morning.
+    After you get out of bed, you head to the bathroom. You perform your routine, use the bathroom, brush your teeth, wash your face. Afterwards, you stare into the mirror. You feel like this image is disgusting and hideous. Why would anyone like a useless sack of skin like you. You get caught up in this feeling great distaste over your skin. As the insecure thoughts impede on your mental space, you swiftly tug the cabinet open and see your pills. You hesitantly grab the bottle, and you carefully inspect the cap. Do you think you really need them?<br>
+    <button class= "block" onclick="takethem()">Yes</button><br>
+    <button class= "block" onclick="donttakethem()">No</button>
+  </p>
+  <p id="sleepysleepy" style="display:none">
+    Screw it,’ you think to yourself as you snooze your alarm and toss over in your bed. Soon, your snoozed alarm wakes you up again and your mom pulls the sheet off of you as she yells at you to get up. Disoriented, you hurry out of bed.
+    After you get out of bed, you head to the bathroom. You perform your routine, use the bathroom, brush your teeth, wash your face. Afterwards, you stare into the mirror. You feel like this image is disgusting and hideous. Why would anyone like a useless sack of skin like you. You get caught up in this feeling great distaste over your skin. As the insecure thoughts impede on your mental space, you swiftly tug the cabinet open and see your pills. You hesitantly grab the bottle, and you carefully inspect the cap. Do you think you really need them?<br>
+    <button class= "block" onclick="takethem()">Yes</button><br>
+    <button class= "block" onclick="donttakethem()">No</button>
+  </p>
+
+  <script>
+    var meds = 0;
+    var nomeds = 0;
+
+    function takethem() {
+      var w = document.getElementById("wakeywakey");
+      var s = document.getElementById("sleepysleepy");
+      var t = document.getElementById("takingmeds");
+      if(meds == 0) {
+        t.style.display = 'block';
+        w.style.display = 'none';
+        s.style.display = 'none';}
+    }
+
+    function donttakethem() {
+      var w = document.getElementById("wakeywakey");
+      var s = document.getElementById("sleepysleepy");
+      var n = document.getElementById("nottakingmeds");
+      if(bed == 0) {
+        n.style.display = 'block';
+        w.style.display = 'none';
+        s.style.display = 'none';}
+     }
+   </script>
+
+<!--pill-->
+
+<p id="takingmeds" style="display:none">
+  You frantically open the cap and shake out two pills. With a sigh, you toss them into your mouth and swallow them with an ungraceful gulp. After monthts of taking them, you can finally feel the effects. <br>
+  You return to your room pick out a nice outfit. You’re in a decent mood today. You feel like plain jeans with a t-shirt won’t display your good mood. You grab your backpack as you run outside with your mom. She drives you to school and tells you to have a nice day.<br>
+  You walk into school and everyone seems different. Everyone feels more alive, more real. You do your typical routine, go to homeroom for attendance. You finally feel motivated to see your counselor, but you're not sure if you should skip class.<br>
+ <button class= "block" onclick="gotocounselor_pills()">Counseling</button><br>
+ <button class= "block" onclick="gotoclass_pills()">Class</button>
+</p>
+
+ <script>
+   var counspill = 0;
+   var classpills = 0;
+
+   function gotocounselor_pills() {
+     var nt = document.getElementById("takingmeds");
+     var cnp = document.getElementById("counselor_Pills");
+     if(counspill == 0) {
+       cnp.style.display = 'block';
+       nt.style.display = 'none';}
+   }
+
+   function gotoclass_pills() {
+     var nt = document.getElementById("takingmeds");
+     var clnp = document.getElementById("class_pills");
+     if(classpills == 0) {
+       clnp.style.display = 'block';
+       nt.style.display = 'none';}
+   }
+
+ </script>
+ <!---counselor pill-->
+ <p id="counselor_Pills" style="display:none">
+  You start to head to the counseling office and you knock on the glass, looking in to see who’s in there, and you find the counselor you’ve been investing your life into since the 7th grade. Many kids say she doesn’t understand kids very well, although she’s very helpful with education and college routes. She seems like she’s had the perfect life and is always so cheerful, and it bothers to the point where you feel jealous that she has it so easy.<br>
+  You approach her, preparing to finally tell her the truth about how you feel.<br>
+  “How are you today?”<br>
+    <button class= "block" onclick="fine_pills()">fine</button><br>
+    <button class= "block" onclick="fine_pills()">dead</button><br>
+    <button class= "block" onclick="fine_pills()">empty</button><br>
+    <button class= "block" onclick="great_pills()">great</button><br>
+</p>
+<script>
+  var condition = 0
+  var talkabout = 0
+
+  function fine_pills() {
+    var fr = document.getElementById("fineresponse_pills");
+    var cnp = document.getElementById("counselor_Pills");
+    var ttc = document.getElementById("talktocounselor_pills");
+    if(condition == 0) {
+      cnp.style.display = 'none';
+      fr.style.display = 'block';
+      ttc.style.display = 'block';}
+  }
+
+  function great_pills() {
+    var cnp = document.getElementById("counselor_Pills");
+    var gr = document.getElementById("greatresponse_pills");
+      var ttc = document.getElementById("talktocounselor_pills");
+    if(condition == 0) {
+      gr.style.display = 'block';
+      cnp.style.display = 'none';
+      ttc.style.display = 'block';}
+  }
+
+</script>
+<p id="fineresponse_pills" style="display:none">
+  "I'm fine," you lie. You pause then tell her a truth, "Feeling better than last time."<br>
+  "Well we're getting somewhere. Better than terrible," she says in a perky tone.<br>
+  *Don't tell her anything. She can't help us.*
+</p>
+<p id="greatresponse_pills" style="display:none">
+  "I'm great!" you lie. You pause then tell her a truth, "Feeling better than last time." <br>
+  "That's really good! Wow, we're getting somewhere," she says happily.<br>
+  *Look how fake she is. She doesn't care about us. We're fine, now let's go*
+</p>
+
+<p id="talktocounselor_pills" style="display:none">
+  “Is there anything you would like to talk about?” she asks. <br>
+ <button class= "block" onclick="attempttottalk_Pills()">Yes</button><br>
+ <button class= "block" onclick="dontattempttottalk_Pills()">No</button>
+</p>
+
+<script>
+  var trytotalk_Pills = 0
+  var notrytotalk_Pills = 0
+
+  function attempttottalk_Pills() {
+    var fr = document.getElementById("fineresponse_pills");
+    var cnp = document.getElementById("counselor_Pills");
+    var ttc = document.getElementById("talktocounselor_pills");
+    var gr = document.getElementById("greatresponse_pills");
+    var attnp = document.getElementById("attempttottalk_Pills");
+    if(condition == 0) {
+      attnp.style.display = "block";
+      gr.style.display = 'none';
+      fr.style.display = 'none';
+      ttc.style.display = 'none';}
+  }
+
+  function dontattempttottalk_Pills() {
+    var fr = document.getElementById("fineresponse_pills");
+    var cnp = document.getElementById("attempttottalk_Pills");
+    var ttc = document.getElementById("talktocounselor_pills");
+    var gr = document.getElementById("greatresponse_pills");
+    var dattnp = document.getElementById("dontconfess_Pills");
+    if(condition == 0) {
+      dattnp.style.display = 'block';
+      cnp.style.display = 'none';
+      gr.style.display = 'none';
+      fr.style.display = 'none';
+      ttc.style.display = 'none';}
+  }
+
+</script>
+<p id="attempttottalk_Pills" style="display:none">
+  "Yes there is something I would like to talk about actually well..." <br>
+  *What are you doing? You're worthless. She does not care about you. I told you to never tell anyone. These doctors put you these pills to get rid of me. I am a part of you.*<br>
+  (click the button below until you're able to tell her the truth or give up)<br>
+  <button class="block" onclick="clickCounter1_pills()">admit</button><br>
+  <button class="block" onclick="dontattempttottalk_Pills()">give up</button>
+</p>
+
+<div id="confess_Pills" style="display:none">
+  "I'm sorry. Without my medicaiton, I think I'd feel like nothing. Even with them, I don't feel motivated about anything, really. I don't like playing sports, any instruments, or particpating in clubs. I want to give up on studying, too. I've started to hate talking to people and I spend all my time on my phone or laptop. I hate everything," You begin to cry in front of your counselor. You feel like you unloaded an entire cargo ship worth of baggage you've been holding on to for so long.<br>
+  "No, no. You didn't do anything wrong. You're an amazing person. You're not worthless at all. I've heard Kevin and Laura say they really care about you. You may think that no one understands and that this is just my job, but I truly want to help you. Everything is going to be okay. You may not realize it, but so many people feel this way. I mean like, 'How would I know? I'm just an old guidance counselor?' I was a kid, too. I've been in your place. When my dad died when I was 15, I lost it. But with motivation and the love of others, I was able to figure everything out. You only have one life, and it is so precious. I want to help you get back on track and make the most of it. I really care about you. Do you want a hug?"<br>
+  "Sure why not." As you hug her, this sense of comfort flows throughout your body.<br>
+  "Thank you. You're a real help. Do you mind if I stay here the rest of the day?" <br>
+  "If it helps you feel better, sure."<br>
+  You take a nap in her office and talk to her occasionally. She helps you with schoolwork you missed and you geniunely feel better. You know someone cares about you.<br>
+  ----The day continues----<br>
+  After the final bell rings, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+  "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+  Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+  <button class= "block" onclick="talktoKevin_pill()">Yes</button><br>
+  <button class= "block" onclick="donttalktoKevin_pill()">No</button>
+</div>
+<div id="dontconfess_Pills" style="display:none">
+  "No. Never mind. It's nothing. My pills are just messing with my emotions a bit and it's kind of stressing me out. I think I'm okay now."<br>
+  "Are you sure? Many kids come in here and take back what they have to say," She says back.<br>
+  "No I'm okay," your voice shakes. <br>
+  "It's okay. If it's really just your pills that are bothering you, that's pretty normal. The help you right?"<br>
+  *See, she doesn't understand. How can someone like this ever help you. She's a fake. She just wants her paycheck to get out of here*<br>
+  "Yeah. Sure," you say in a sassy tone. "I'm sorry. I didn't mean to sass you. I should go sorry."<br>
+  You run out of the room and arrive at your first class of the day. You apologize for being late, then take your seat behind Laura.<br>
+  ----The day continues as a haze----<br>
+  After the final bell rings, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+  "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+  Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+  <button class= "block" onclick="talktoKevin_pill()">Yes</button><br>
+  <button class= "block" onclick="donttalktoKevin_pill()">No</button>
+</div>
+
+<script>
+  function clickCounter1_pills() {
+    var a = document.getElementById("confess_Pills");
+    var n = document.getElementById("noconfess_Pills");
+    var attnp = document.getElementById("attempttottalk_Pills");
+    if(typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            if(sessionStorage.clickcount >= 50) {
+              a.style.display = 'block';
+              attnp.style.display = 'none';
+            }
+            else if(sessionStorage.clickcount <= 49){
+              n.style.display = 'block';
+              attnp.style.display = 'none';
+            }
+        }
+        else {
+            sessionStorage.clickcount = 1;
+        }
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+  }
+</script>
+<!---class no pill-->
+<div id="class_pills" style="display:none">
+  You sit down in your seat in math class. You feel somewhat ready for the day and have some motivation to work harder than before. Laura sits in front of you. You've liked her for a really long time. She's sweet, smart, and thoughtful and the best friend you've ever had. Thinking about her makes you smile in a way you wouldn't without your pills. She turns around to talk to you.<br>
+  “How was your weekend?” she says.<br>
+  <button class= "block" onclick="finetocrush_pills()">fine</button><br>
+  <button class= "block" onclick="terrible_pills()">terrible</button><br>
+  <button class= "block" onclick="whyucare_pills()">Why Do You care?</button><br>
+</div>
+<script>
+  var conditiontocrush = 0
+  var talkabout = 0
+
+  function finetocrush_pills() {
+    var clp = document.getElementById("class_pills");
+    var fwp = document.getElementById("imfinethisweekend_Pill");
+    if(conditiontocrush == 0) {
+      clp.style.display = 'none';
+      fwp.style.display = 'block';}
+  }
+
+  function terrible_pills() {
+    if(conditiontocrush == 0) {
+      document.getElementById("class_pills").style.display = 'none';
+      document.getElementById("terriblethisweekend_Pill").style.display = 'block';}
+  }
+
+  function whyucare_pills() {
+    var clp = document.getElementById("class_pills");
+    var ycp = document.getElementById("whyyoucare_pills");
+    if(conditiontocrush == 0) {
+      clp.style.display = 'none';
+      ycp.style.display = 'block';}
+  }
+
+</script>
+
+<div id="imfinethisweekend_Pill" style="display:none">
+  "It was fine. Nothing interesting," you say with a smile. You're able to hold back your words, but something inside you wants to tell her more.<br>
+  "I bet it was a lot cooler than you say. Didn't you say you watched your brother's band concert? How was that? Sorry I didn't ask beforehand. I was a bit busy with studying for my chemsitry test today," she said. <br>
+  *She probably likes someone else. I mean come on, you're a medicated mess.*<br>
+  "Yeah, it was good. He had a sore throat, so he couldn't play his solo. He could barely talk when he was done," I said back with a chuckle.<br>
+  She smiles to you and giggles a bit. "Aw, that's sucks. Class is gonna start soon. We should get ready."<br>
+  Do you want to confess your feelings? *You really shouldn't. I've told you before, she's too good for you. It'll never happen.*<br>
+  <button class= "block" onclick="confesstoL_pill()">Yes</button><br>
+  <button class= "block" onclick="dontconfesstoL_pill()">No</button>
+</div>
+
+<div id="terriblethisweekend_Pill" style="display:none">
+  "It was trash. I mean, I went to my brother's concert, but he was too sick to play. Pretty boring," you say. <br>
+  "Oh that sucks. Are you okay though?" she said. <br>
+  *Do you think she cares? No one does*<br>
+  <button class= "block" onclick="imokL_Pill()">Yes</button><br>
+  <button class= "block" onclick="notokL_Pill()">No</button>
+</div>
+
+<div id="askforhelpL_Pill" style="display:none">
+  "Well..."<br>
+  (if you want to confess, click "Confess" until you are able to confess.)<br>
+  <button class= "block" onclick="tryforhelp_Pill()">Confess</button><br>
+  <button class= "block" onclick="imokL_Pill()">Give up</button>
+</div>
+
+<div id="terrible_notok_Pill" style="display:none">
+  "Honestly? No. I'm not okay. I don't want to put a burden on you. I'm really sorry I said anything," you say with tears in your eyes. *WHAT ARE YOU DOING? YOU'RE GOING TO SCARE HER AWAY?*<br>
+  With a sudden rush of emotion, you push the voice in your head aside and let yourself open up to her.<br>
+  "No, no. I want to help you. You're one of my best friends and I care about you a lot. Don't worry about me. Do you want to talk about it now? We can talk later, too, if you need to." She has this really sweet and geniune smile. Her eyes light up with concert and glimmer in everything amazing about her.<br>
+  "I'm sorry. I just haven't been that happy. I've been taking antidepressants for months now, and I feel better. Even though I can finally push myself to get out of bed, I don't always feel motivated about much. I don't like playing sports, any instruments, or particpating in clubs. Sometimes, I want to give up on studying, too. I've started to hate talking to people and I spend all my time on my phone or laptop. I feel pathetic and worthless. It's nice to have someone to talk to." *You <i>are</i> pathetic*<br>
+  You push away the thoughts in your head for a little bit and focus on Laura.<br>
+  "I'm here for you. I can help you. We can talk more later okay?"<br>
+  "Ok." <br>
+  Do you want to confess your feelings?<br>
+  <button class= "block" onclick="confesstoL_pill()">Yes</button><br>
+  <button class= "block" onclick="dontconfesstoL_pill()">No</button>
+</div>
+
+<!--attempt to confess-->
+
+<div id="confessornot_Pill" style="display:none">
+  "Hey Laura..."<br>
+  (if you want to confess, click "Confess" until you are able to confess.)<br>
+  <button class= "block" onclick="tellLfeelings_Pill()">Confess</button><br>
+  <button class= "block" onclick="dontconfesstoL_pill()">Give up</button>
+</div>
+
+<div id="terrible_ok_Pill" style="display:none">
+  "I'm okay. Just not a good weekend. I'm pretty tired, too," you lie.<br>
+  "Oh, that's good. If you ever need to talk, I'm right here." She gives you a really sweet and geniune smile. You can't help but wish you could tell her anything, but something keeps holding you back.<br>
+  "Thanks." You smile back at her. It's the realest one you've given anyone in a while.<br>
+  Do you want to confess your feelings? *It'll never happen.*<br>
+  <button class= "block" onclick="confesstoL_pill()">Yes</button><br>
+  <button class= "block" onclick="dontconfesstoL_pill()">No</button>
+</div>
+
+<div id="whyyoucare_pills" style="display:none">
+  "Why do you care?" you say coldly.<br>
+  "Damn. Sorry I asked," she turns around and gets ready for class. <br>
+  *Nice one. You're trash you know that?*<br>
+  Do you want to confess your feelings? *You really shouldn't. I've told you before, she's too good for you. It'll never happen.*<br>
+  <button class= "block" onclick="confesstoL_whycare_pill()">Yes</button><br>
+  <button class= "block" onclick="dontconfesstoL_whycare_pill()">No</button>
+</div>
+
+<div id="confessornotwhycare_Pill" style="display:none">
+  "Hey Laura..."<br>
+  (if you want to confess, click "Confess" until you are able to confess.)<br>
+  <button class= "block" onclick="tellLfeelingswhycare_Pill()">Confess</button><br>
+  <button class= "block" onclick="dontconfesstoL_whycare_pill()">Give up</button>
+</div>
+
+<script>
+  var notok = 0
+  var imok = 0
+  var confess = 0
+  var noconfess_Pills = 0
+
+  function notokL_Pill() {
+    if (notok == 0) {
+      document.getElementById("terriblethisweekend_Pill").style.display = 'none';
+      document.getElementById("askforhelpL_Pill").style.display = 'block';
+    }
+  }
+
+  function tryforhelp_Pill() {
+    var a = document.getElementById("terrible_notok_Pill");
+    var n = document.getElementById("askforhelpL_Pill");
+    var b = document.getElementById("terrible_ok_Pill");
+    if(typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+          sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+          if(sessionStorage.clickcount >= 50) {
+            a.style.display = 'block';
+            n.style.display = 'none';
+          }
+        }
+        else {
+          sessionStorage.clickcount = 1;
+        }
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+  }
+
+  function imokL_Pill() {
+    if(imok == 0) {
+      document.getElementById("terrible_ok_Pill").style.display = 'block';
+      document.getElementById("terriblethisweekend_Pill").style.display = 'none';
+      document.getElementById("askforhelpL_Pill").style.display = 'none';
+    }
+  }
+
+  function confesstoL_pill() {
+    var cl = document.getElementById("confessornot_Pill");
+    var fineweekend = document.getElementById("imfinethisweekend_Pill");
+    var tnok = document.getElementById("terrible_notok_Pill");
+    var tok = document.getElementById("terrible_ok_Pill");
+      if (confess == 0) {
+        cl.style.display = 'block';
+        tnok.style.display = 'none';
+        tok.style.display = 'none';
+        fineweekend.style.display = 'none';
+      }
+    }
+
+  function tellLfeelings_Pill() {
+    var cl = document.getElementById("confesstoL_pill");
+    var nocl = document.getElementById("confessornot_Pill")
+      if(typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+          sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+          if(sessionStorage.clickcount >= 75) {
+            cl.style.display = 'block';
+            nocl.style.display = 'none';}
+        }
+        else {
+          sessionStorage.clickcount = 1;
+        }
+    }
+  }
+
+   function dontconfesstoL_pill() {
+    var nocl = document.getElementById("dontconfesstoL_pill");
+    var tok = document.getElementById("terrible_ok_Pill");
+    var tnok = document.getElementById("terrible_notok_Pill");
+    var conotnp = document.getElementById("confessornot_Pill");
+    var fineweekend = document.getElementById("imfinethisweekend_Pill");
+    if(noconfess_Pills == 0) {
+      nocl.style.display = 'block';
+      tnok.style.display = 'none';
+      tok.style.display = 'none';
+      conotnp.style.display = 'none';
+      fineweekend.style.display = 'none';}
+    }
+
+    function confesstoL_whycare_pill() {
+      var cl = document.getElementById("confessornotwhycare_Pill");
+      var whycarenp = document.getElementById("whyyoucare_pills");
+        if (confess == 0) {
+          cl.style.display = 'block';
+          whycarenp.style.display = 'none';
+        }
+    }
+
+    function tellLfeelingswhycare_Pill() {
+      var cl = document.getElementById("confesstoL_whycare_pill");
+      var nocl = document.getElementById("confessornotwhycare_Pill")
+        if(typeof(Storage) !== "undefined") {
+          if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            if(sessionStorage.clickcount >= 50) {
+              cl.style.display = 'block';
+              nocl.style.display = 'none';}
+          }
+          else {
+            sessionStorage.clickcount = 1;
+          }
+      }
+    }
+
+     function dontconfesstoL_whycare_pill() {
+      var dclwc = document.getElementById("dontconfesstoLwhycare_pill");
+      var wycnp = document.getElementById("whyyoucare_pills");
+      var wow = document.getElementById("confessornotwhycare_Pill");
+      if(noconfess_Pills == 0) {
+        dclwc.style.display = 'block';
+        wycnp.style.display = 'none';
+        wow.style.display = 'none';
+      }
+    }
+
+
+</script>
+
+<div id="confesstoL_pill" style="display:none">
+  "We’ve been friends for a while, and I was wondering if you’d like to hang out sometime. Just the two of us?" you say nervously. In the seconds she takes to respond, your palms start to sweat and you begin to regret you asked. Your heart beats faster to the point you're afraid she would be freaked out by you.<br>
+  "I'd love to. That'll be really cool. I'm free on Saturday," she says with a big smile.
+  "Saturday it is." You've never felt this way in a long time. You can't help but smile and thank her. Afterwards, she turns back around and you continue your day. It's the first time in a while you feel motivated. You feel empowered to do things, like try a sport find a job.<br>
+  A job... You remember you have a job interview today for an internship that is an hour after school ends.<br>
+  ----the day continues----<br>
+  On your way out of school, your friend Kevin walks up to you.<br>
+  "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+  Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+  <button class= "block" onclick="talktoKevin_pill()">Yes</button><br>
+  <button class= "block" onclick="donttalktoKevin_pill()">No</button>
+</div>
+
+<div id="dontconfesstoL_pill" style="display:none">
+  "We should get ready for class," you say hesitantly.<br>
+  Laura nods and turns around as the teacher prepares to teach the class. You stare at her head the entire time and zone out. Next thing you know the bell rings for the next period.<br>
+  ----the day continues as a haze----<br>
+  After your last class, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+  "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+  Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+  <button class= "block" onclick="talktoKevin_pill()">Yes</button><br>
+  <button class= "block" onclick="donttalktoKevin_pill()">No</button>
+</div>
+
+<div id="confesstoL_whycare_pill" style="display:none">
+  "We’ve been friends for a while, and..." <br>
+  Laura ignores you and pays attention to the teacher as she prepares to teach the class.<br>
+  *Did you really think she'd like you after that?*<br>
+  ----the day continues----<br>
+  On your way out of school, your friend Kevin walks up to you.<br>
+  "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+  *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+  <button class= "block" onclick="talktoKevin_pill()">Yes</button><br>
+  <button class= "block" onclick="donttalktoKevin_pill()">No</button>
+</div>
+
+<div id="dontconfesstoLwhycare_pill" style="display:none">
+  "Nevermind." She didn't even notice you when you said hey.<br>
+  *Nice job chasing her away. She'll probably hate you forever.*<br>
+  ----the day continues as a haze----<br>
+  After your last class, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+  "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+  Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+  <button class= "block" onclick="talktoKevin_pill()">Yes</button><br>
+  <button class= "block" onclick="donttalktoKevin_pill()">No</button>
+</div>
+
+<script>
+  var donttalkK = 0;
+  var dotalkK = 0;
+
+  function talktoKevin_pill() {
+    if (dotalkK == 0) {
+      document.getElementById("helpKevin_Pill").style.display = 'block';
+      document.getElementById("confesstoL_pill").style.display = 'none';
+      document.getElementById("dontconfesstoL_pill").style.display = 'none';
+      document.getElementById("confesstoL_whycare_pill").style.display = 'none';
+      document.getElementById("dontconfesstoLwhycare_pill").style.display = 'none';
+      document.getElementById("confess_Pills").style.display = 'none';
+      document.getElementById("dontconfess_Pills").style.display = 'none';
+    }
+  }
+
+  function donttalktoKevin_pill() {
+    if (donttalkK == 0) {
+      document.getElementById("donthelpKevin_Pill").style.display = 'block';
+      document.getElementById("confesstoL").style.display = 'none';
+      document.getElementById("dontconfesstoL").style.display = 'none';
+      document.getElementById("confesstoL_whycare").style.display = 'none';
+      document.getElementById("dontconfesstoLwhycare_pill").style.display = 'none';
+      document.getElementById("confess_Pills").style.display = 'none';
+      document.getElementById("dontconfess_Pills").style.display = 'none';
+    }
+  }
+</script>
+
+<div id="donthelpKevin_Pill" style="display:none">
+  "Sorry Kev, I have a really imporant job interview. I have to get there as fast as possible. Maybe next time, okay?" you say in a hurry.<br>
+  "Oh, ok. I'm sorry. Sure, maybe later." Kevin's eyes water up and he turns away wiht his head down.<br>
+  *Why? What type of person are you? How do you not even care?*<br>
+  You continue to head out of school.<br>
+  Your mom picks you up and drive you home, then, get ready for the interview. You make it just in time, and your mom wishes you good luck.<br>
+  You walk into the office. You feel a little nervous, but you’re determined to succeed. It’s the most motivated you’ve felt in a while and today was above average. Getting this internship would not only put extra money in your pocket, it would also look great on your college résumé.<br>
+  The manager is waiting outside and guides you into his office.<br>
+  <button class= "block" onclick="interviewgoodcondition_Pill()">Continue</button>
+</div>
+
+<!--comfort Kevin-->
+<div id="helpKevin_Pill" style="display:none">
+  "Sure. What do you want to talk about?" you say. You gesture to the side of the hall and the two of you move over.<br>
+  "Well, I just haven't been feeling great recently. You know what I mean? I just feel like everything is going downhill. I feel tired all the time and nothing is fun anymore. Is that normal?"<br>
+  <button class="block" onclick="normalKevin_Pill()">Yes</button><br>
+  <button class="block" onclick="notnormalKevin_Pill()">No</button>
+</div>
+
+<script>
+  var yesnormal = 0;
+  var notnormal = 0;
+
+  function normalKevin_Pill() {
+    if (yesnormal == 0) {
+      document.getElementById("itsnormal_Pill").style.display = 'block';
+      document.getElementById("helpKevin_Pill").style.display = 'none';
+    }
+  }
+
+
+  function notnormalKevin_Pill() {
+    if (notnormal == 0) {
+      document.getElementById("itsnotnormal_Pill").style.display = 'block';
+      document.getElementById("helpKevin_Pill").style.display = 'none';
+    }
+  }
+
+</script>
+
+<div id="itsnormal_Pill" style="display:none">
+  "So many people know how you feel Kevin. I know how you feel," You tell him sincerly.<br>
+  "Okay, I was just worried. I'm really scared. I feel nothing a lot of the time. Sometimes, I look forward to nothing. My grades are plummeting and I want to give up on college and the SATs. All my friends and my parents are so busy all the time, I don't want to waste their time," he says with tears in his eyes. <br>
+  This all feels so familiar to you. You sympathize with Kevin. You know exactly what he's going through and you feel like you should help him get through this.<br>
+  "Everything is going to be okay, Kevin. I'm your friend. I'm here for you and I care about you a lot. I really want to help you," you tell him. You then hug him and say, "Everything will be all right."<br>
+  The two of you talk for 30 minutes, and afterwards your mom drives you home to get ready. The entire ride home, she nags you about how late you are. You don't tell her what happened to Kevin because you feel like it is not her business.<br>
+  At the office, you look like a mess. You're hair is frizzy, your shirt is wrinkled, your socks don't even match. You run to the manager's office and he looks annoyed.<br>
+  <button class="block" onclick="interviewbadcondition_Pill()">Continue</button><br>
+</div>
+
+<div id="itsnotnormal_Pill" style="display:none">
+  "I don't know what you mean," You lie to him.<br>
+  This all feels so familiar to you, yet you don't sympathize with him. You know exactly what he's going through, but you help him.<br>
+  *Why? What type of person are you? How do you not even care?*
+  "Oh, okay. I don't want to waste your time then, I guess. See you tomorrow." Kevin's eyes water up and he turns away wiht his head down.<br>
+  Your mom picks you up and drive you home, then, get ready for the interview. You make it just in time, and your mom wishes you good luck.<br>
+  You walk into the office. You feel a little nervous, but you’re determined to succeed. It’s the most motivated you’ve felt in a while and today was above average. Getting this internship would not only put extra money in your pocket, it would also look great on your college résumé.<br>
+  The manager is waiting outside and guides you into his office.<br>
+  <button class="block" onclick="interviewgoodcondition_Pill()">Continue</button>
+</div>
+
+<script>
+var good = 0;
+var bad = 0;
+
+function interviewbadcondition_Pill() {
+  if (bad == 0) {
+    document.getElementById("failedinterview_pill").style.display = 'block';
+    document.getElementById("itsnormal_Pill").style.display = 'none';
+    document.getElementById("dontconfesstoLwhycare_pill").style.display = 'none';
+    document.getElementById("donthelpKevin_Pill").style.display = 'none';}
+  }
+
+
+function interviewgoodcondition_Pill() {
+  if (good == 0) {
+    document.getElementById("successfulinterview_pill").style.display = 'block';
+    document.getElementById("itsnotnormal_Pill").style.display = 'none';
+    document.getElementById("dontconfesstoLwhycare_pill").style.display = 'none';
+    document.getElementById("donthelpKevin_Pill").style.display = 'none';}}
+
+
+</script>
+
+<div id="failedinterview_pill" style="display:none">
+You’ve been working so hard in the last few months. Getting this internship would not only put extra money in your pocket, it would also look great on your college résumé.<br>
+“Good afternoon. Sorry for being late sir,” you say.<br>
+“"Hello. I'm Mr. Yonehara. Just remember, we value punctuality here. Well we have 20 minutes left, so as long as we get all the points down we’ll be good. Try not to worry about it.”
+The interview goes well mostly, but you can tell in his face that he is annoyed with how late you were. <br>
+You think of all the things he could be judging as you speak. *I bet he disapproves of the way you look, your hunched back, your nervousness, and how you’ve yawned about 5 times already.*<br>
+You answer everything as best as you can, but he doesn’t seem to like your personality. After the 20 minutes, he tells you, “I’m sorry, I dont think you are fit for this company. I wish you luck for the future. You have so much potential.”
+*He sounds so fake. He just doesn't want to hurt your feelings. You're so worthless. You can't even get this simple job.*
+On your way out,  you feel a throbbing in your head. You feel terrible about not getting the internship, but a part of you isn't ready to give up. <br>
+*There's nothing for you anymore. You hurt everyone and you hurt yourself. <i>You are nothing.</i>* You don't want to believe this. On the car ride home you tell yourself that your head is wrong.<br>
+Your mom still seems annoyed with how late you are, but tries to comfort you. "There will be so many new opportunities, but you just need to be on time okay? See what happens?"<br>
+You decide to not tone her out this time and you think about how to improve yourself.<br>
+<button class= "block" onclick="gohomebad_Pill()">Continue</button>
+</div>
+
+<div id="successfulinterview_pill" style="display:none">
+"Good afternoon, sir” you say politely.<br>
+"Hello. I'm Mr. Yonehara. I'm so glad you're on time. We value punctuality here. So why would you like an internship? More than just money I assume?" He says with a smile.<br>
+You smile back and try to be honest with him. "I really like what Yuki Tech Industries does. I've been interested in innovating technology from a young age and I would love to have access to the resources that your company can provide..."<br>
+The interview continues for 30 minutes, and Mr. Yonehara seems to really like you. He is impressed by everything you say, and you start to feel confident about yourself. It's like a person of authority finally approves of you. You're finally able to push the voice inside your head back even without your medication.<br>
+Soon he stands up and shakes your hand.<br>
+"It was a pleasure meeting you. You're the best candidate we've interviewed so far, and one of the last ones. I think it's safe to say you have a very high chance of being accepted into our intership program."<br>
+You feel another rush of joy flow through you. When your mom picks you up, she is esctatic over this fantastic news.<br>
+"I'm so proud of you, honey. Let's go out for dinner on Friday to celebrate." She smiles are cheers for you. She's proud of you. She loves you. You start to feel okay. Everything feels like its coming into place.<br>
+<button class= "block" onclick="gohomegood_Pill()">Continue</button>
+</div>
+
+<script>
+var good = 0;
+var bad = 0;
+
+function gohomegood_Pill() {
+  if (good == 0) {
+    document.getElementById("homehappy_Pill").style.display = 'block';
+    document.getElementById("successfulinterview_pill").style.display = 'none';}
+}
+
+function gohomebad_Pill() {
+  if (bad == 0) {
+    document.getElementById("homesad_Pill").style.display = 'block';
+    document.getElementById("failedinterview_pill").style.display = 'none';}
+}
+
+</script>
+
+<div id="homehappy_Pill" style="display:none">
+You get home and finsh up your homework. You spend time with your family over dinner and you can't help but smile to yourself. Your mom's so proud of you and loves you, even after all the times you hurt her. You think of everything that has happened today, and you think you'll be okay. You feel bad for not talking to Kevin, and decide to give him a call. He seemed upset, so you decide to comfort him as he gets through a rough patch in his life.<br>
+That night, you lay down in your bed. For once you're feel something. Hope. Everything will be ok. You know everything in your life is a cycle of numbness and sadness, but sometimes it breaks when you muster up the courage to find something that makes you happy. One day it'll break for good.<br>
+<h2><b>THE END</b></h2>
+</div>
+
+<div id="homesad_Pill" style="display:none">
+You go home and lock yourself in your room. You don't want to hear your family's disappoinment, so you think long and hard on what to do with your life. You try not to feel empty. "Today was just another opportunity to learn. There was nothing wrong with helping Kevin, he's a friend." <br>
+As you get ready for bed, you look at yourself in the mirror. Everything likes to break apart, but you know some things cam be put back together. You give Laura a call, she seemed sleepy, but kindly listens to what you have to say. She seems to really care.<br>
+your mom checks up on you. "Honey are you ok?" she says. <br>
+"Yes, mom." She opens the door and gives you a hug. She seems to really care, too.<br>
+As you lie in bed that night, you think, "Tomorrow is a new day, probably similar, if not, the same as today. That's ok. This cycle has to be end."<br>
+<h2><b>THE END</b></h2>
+</div>
+
+<!--no pill -->
+  <p id="nottakingmeds" style="display:none">
+    You slam the cabinet shut. You stare closely at the mirror again, feeling your head throbbing. You ignore it. “I don’t need this. I don’t need anything. I only need me” you whisper quietly.”<br>
+    You return to your room to throw on the first outfit you see. You grab your backpack as you run outside with your mom. She drives you to school and tells you to have a nice day.<br>
+    You arrive at school and you see the same dull environment. You do your typical routine, go to homeroom for attendance. When you get there, you get a call from your mom.<br>
+    "I've noticed that you haven't been taking your pills. When are you gonna take action and do something about how you feel? You're wasting the money I spent on your medication. When will you grow up and be considerate?"<br>
+    "Oh my God mom. I'm sorry, they don't work. I don't care if it takes months for them to work, I need help now." you say back. Hang up and slam your phone down. You feel so frustrated, you're annoyed that she doesn't understand What you're going through and you begin to cry to yourself. Some girls point at you and whisper to each other, and you're too upset to confront them. When the bell rings, you feel like you can't handle going to class today.<br>
+    Should you go to counseling or class?<br>
+   <button class= "block" onclick="gotocounselor_nopills()">Counseling</button><br>
+   <button class= "block" onclick="gotoclass_nopills()">Class</button>
+ </p>
+
+   <script>
+     var countnopill = 0
+     var classnopills = 0
+
+     function gotocounselor_nopills() {
+       var nt = document.getElementById("nottakingmeds");
+       var cnp = document.getElementById("counselor_nopills");
+       if(countnopill == 0) {
+         cnp.style.display = 'block';
+         nt.style.display = 'none';}
+     }
+
+     function gotoclass_nopills() {
+       var nt = document.getElementById("nottakingmeds");
+       var clnp = document.getElementById("class_nopills");
+       if(classnopills == 0) {
+         clnp.style.display = 'block';
+         nt.style.display = 'none';}
+     }
+
+   </script>
+   <!---counselor no pill-->
+   <p id="counselor_nopills" style="display:none">
+    You start to head to the counselors office and you knock in the glass, looking in to see who’s in there, and you find the counselor you’ve been investing your life into since the 7th grade. Many kids say she doesn’t understand kids very well, although she’s very helpful with education and college routes. She seems like she’s had the perfect life and is always so cheerful, and it bothers to the point where you feel jealous that she has it so easy.<br>
+    You approach her, preparing to finally tell her the truth about how you feel.<br>
+    “How are you today?”<br>
+    <button class= "block" onclick="fine()">fine</button><br>
+    <button class= "block" onclick="fine()">dead</button><br>
+    <button class= "block" onclick="fine()">empty</button><br>
+    <button class= "block" onclick="great()">great</button>
+  </p>
+  <script>
+    var condition = 0
+    var talkabout = 0
+
+    function fine() {
+      var fr = document.getElementById("fineresponse");
+      var cnp = document.getElementById("counselor_nopills");
+      var ttc = document.getElementById("talktocounselor");
+      if(condition == 0) {
+        cnp.style.display = 'none';
+        fr.style.display = 'block';
+        ttc.style.display = 'block';}
+    }
+
+    function great() {
+      var cnp = document.getElementById("counselor_nopills");
+      var gr = document.getElementById("greatresponse");
+        var ttc = document.getElementById("talktocounselor");
+      if(condition == 0) {
+        gr.style.display = 'block';
+        cnp.style.display = 'none';
+        ttc.style.display = 'block';}
+    }
+
+  </script>
+  <p id="fineresponse" style="display:none">
+    "I'm fine," you lie.<br>
+    "Oh well we're getting somewhere. Better than terrible," she says.<br>
+    *don't tell her anything. She can't help us.*
+  </p>
+  <p id="greatresponse" style="display:none">
+    "I'm great!" you lie.<br>
+    "That's really good! Wow, we're getting somewhere," he says<br>
+    *Look how fake she is. She doesn't care about us. We're fine, now let's go*
+  </p>
+
+  <p id="talktocounselor" style="display:none">
+    “Is there anything you would like to talk about?” she asks. <br>
+   <button class= "block" onclick="attempttottalk_nopills()">Yes</button><br>
+   <button class= "block" onclick="dontattempttottalk_nopills()">No</button>
+  </p>
+
+  <script>
+    var trytotalk_nopills = 0
+    var notrytotalk_nopills = 0
+
+    function attempttottalk_nopills() {
+      var fr = document.getElementById("fineresponse");
+      var cnp = document.getElementById("counselor_nopills");
+      var ttc = document.getElementById("talktocounselor");
+      var gr = document.getElementById("greatresponse");
+      var attnp = document.getElementById("attempttottalk_nopills");
+      if(condition == 0) {
+        attnp.style.display = "block";
+        gr.style.display = 'none';
+        fr.style.display = 'none';
+        ttc.style.display = 'none';}
+    }
+
+    function dontattempttottalk_nopills() {
+      var fr = document.getElementById("fineresponse");
+      var cnp = document.getElementById("counselor_nopills");
+      var ttc = document.getElementById("talktocounselor");
+      var gr = document.getElementById("greatresponse");
+      var dattnp = document.getElementById("dontconfessnopills");
+      if(condition == 0) {
+        dattnp.style.display = "block";
+        gr.style.display = 'none';
+        fr.style.display = 'none';
+        ttc.style.display = 'none';}
+    }
+
+  </script>
+  <p id="attempttottalk_nopills" style="display:none">
+    "Yes there is something I would like to talk about actually well..." <br>
+    *What are you doing? You're worthless. She does not care about you. I told you to never tell anyone. You remember last time right? Those doctors just gave you pills that don't even work. You'll just pull them down, like you always do. You need to shut up*<br>
+    (click the button below until you're able to tell her the truth or give up)<br>
+    <button class="block" onclick="clickCounter1()">admit</button>
+    <button class="block" onclick="dontattempttottalk_nopills()">give up</button>
+  </p>
+  <div id="result"></div>
+
+  <div id="confessnopills" style="display:none">
+    "I'm sorry. I just haven't been that happy. I don't take my pills anymore cause I feel like they don't work for me. I don't feel motivated about anything anymore. I don't like playing sports, any instruments, or particpating in clubs. I've completely given up on studying now, too. I've started to hate talking to people and I spend all my time on my phone or laptop. I hate everythign. I'm sorry. I feel pathetic and worthless. I thought it could go away or find something that could help me, but I was wrong. I'm sorry I wasted all your time and efforts," You begin to cry in front of your counselor.<br>
+    "No, no. You didn't do anything wrong. You're an amazing person. You may think that no one understands and that this is just my job, but I truly want to help you. Everything is going to be okay. You're young. You have so much time to find something out there and feel better. I mean like, 'How would you know? You're just an old guidance counselor?' I was a kid, too. I've been in your place. When my dad died when I was 15, I lost it. But with motivation and the love of others, I was able to figure everything out. I also learned how precious life is. You only have one life. I'll help you get back on track and make the most of it. I really care about you. Do you want a hug?"<br>
+    "Sure why not." You hug her and you have this sense of comfort flow throughout your body.<br>
+    "Thank you. You're a real help. Do you mind if I stay here the rest of the day?" <br>
+    "If it helps you feel better, sure."<br>
+    You take a nap in her office and talk to her occasionally. She helps you with schoolwork you missed and you geniunely feel better. You know someone cares about you.<br>
+    ----The day continues----<br>
+    After the final bell rings, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+    "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+    Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+    <button class= "block" onclick="talktoKevin()">Yes</button><br>
+    <button class= "block" onclick="donttalktoKevin()">No</button>
+  </div>
+  <div id="dontconfessnopills" style="display:none">
+    "No. Never mind. It's nothing. My mom just yelled at me and it stressed me out a bit. I think I'm okay now."<br>
+    "Are you sure? Many kids come in here and take back what they have to say," She says back.<br>
+    "No I'm okay," your voice shakes. <br>
+    "It's okay. I know your mom. She loves you and she just wants best for. Whatever she got mad over, it doesn't make her love you any less. She's just worried. I know you're going through something and you're probably not okay. That's okay! We can get through this together."<br>
+    *See, she doesn't understand. How can someone like this ever help you. She's a fake. She just wants her paycheck to get out of here*<br>
+    "No, you just don't get it. I said I'm fine," you say as you raise your voice. "I'm sorry. I didn't mean to yell. I should go sorry."<br>
+    You run out of the room and spend the rest of the day sitting in a toilet stall. <br>
+    ----The day continues as a haze----<br>
+    After the final bell rings, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+    "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+    Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+    <button class= "block" onclick="talktoKevin()">Yes</button><br>
+    <button class= "block" onclick="donttalktoKevin()">No</button>
+  </div>
+
+  <script>
+    function clickCounter1() {
+      var a = document.getElementById("confessnopills");
+      var n = document.getElementById("noconfessnopills");
+      var attnp = document.getElementById("attempttottalk_nopills");
+      if(typeof(Storage) !== "undefined") {
+          if (sessionStorage.clickcount) {
+              sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+              if(sessionStorage.clickcount >= 50) {
+                a.style.display = 'block';
+                attnp.style.display = 'none';
+              }
+              else if(sessionStorage.clickcount <= 49){
+                n.style.display = 'block';
+                attnp.style.display = 'none';
+              }
+          }
+          else {
+              sessionStorage.clickcount = 1;
+          }
+        } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+    }
+  </script>
+<!---class no pill-->
+  <div id="class_nopills" style="display:none">
+    You sit down in your seat in math class. Everyone around you looks bored and dead. Everything is dull. Laura sits in front of you. You've liked her for a really long time. She's sweet, smart, and thoughtful and the best friend you've ever had. She turns around to talk to you.<br>
+    “How was your weekend?” she says.<br>
+    <button class= "block" onclick="finetocrush_nopills()">fine</button><br>
+    <button class= "block" onclick="terrible_nopills()">terrible</button><br>
+    <button class= "block" onclick="whyucare_nopills()">Why Do You care?</button><br>
+  </div>
+  <script>
+    var conditiontocrush = 0
+    var talkabout = 0
+
+    function finetocrush_nopills() {
+      var clnp = document.getElementById("class_nopills");
+      var fwnp = document.getElementById("imfinethisweekend_nopill");
+      if(conditiontocrush == 0) {
+        clnp.style.display = 'none';
+        fwnp.style.display = 'block';}
+    }
+
+    function terrible_nopills() {
+      if(conditiontocrush == 0) {
+        document.getElementById("class_nopills").style.display = 'none';
+        document.getElementById("terriblethisweekend_nopill").style.display = 'block';}
+    }
+
+    function whyucare_nopills() {
+      var clnp = document.getElementById("class_nopills");
+      var ycnp = document.getElementById("whyyoucare_nopills");
+      if(conditiontocrush == 0) {
+        clnp.style.display = 'none';
+        ycnp.style.display = 'block';}
+    }
+
+  </script>
+
+  <div id="imfinethisweekend_nopill" style="display:none">
+    "It was fine. Nothing interesting," you say. <br>
+    "I bet it was a lot cooler than you say. Didn't you say you watched your brother's band concert? How was that? Sorry I didn't ask beforehand. I was a bit busy with studying for my chemsitry test today," she said. <br>
+    *She will never like you. You're pathetic. Give up already. She probably likes someone else, like that kid who sits next to her.*<br>
+    "Yeah, it was good. He had a sore throat, so he couldn't play his solo. He could barely talk when he was done," I said back with a weak smile.<br>
+    She smiles to you and giggle a bit. "Aw, that's sucks. Class is gonna start soon. We should get ready."<br>
+    Do you want to confess your feelings? *You really shouldn't. I've told you before, she's too good for you. It'll never happen.*<br>
+    <button class= "block" onclick="confesstoL()">Yes</button><br>
+    <button class= "block" onclick="dontconfesstoL()">No</button>
+  </div>
+
+  <div id="terriblethisweekend_nopill" style="display:none">
+    "It was trash. I mean, I went to my brother's concert, but there was no point since he was too sick to play," you say. <br>
+    "Oh. I'm sorry. Are you okay?" she said. <br>
+    *Do you think she cares? No one does*<br>
+    <button class= "block" onclick="imokL_noPill()">Yes</button><br>
+    <button class= "block" onclick="notokL_noPill()">No</button>
+  </div>
+
+  <div id="askforhelpL_noPill" style="display:none">
+    "Well..."<br>
+    (if you want to confess, click "Confess" until you are able to confess.)<br>
+    <button class= "block" onclick="tryforhelp_noPill()">Confess</button><br>
+    <button class= "block" onclick="imokL_noPill()">Give up</button>
+  </div>
+
+  <div id="terrible_notok_noPill" style="display:none">
+    "Honestly? No. I'm not okay. I don't want to put a burden on you. I'm really sorry I said anything," you say with tears in your eyes. *WHAT ARE YOU DOING? YOU'RE GOING TO SCARE HER AWAY?<br>
+    "No, no. I want to help you. You're one of my best friends and I care about you a lot. Don't worry about me. Do you want to talk about it now? We can talk later, too, if you need to." She has this really sweet and geniune smile. Her eyes light up with concert and glimmer in everything amazing about her.<br>
+    "I'm sorry. I just haven't been that happy. I don't take my pills anymore cause I feel like they don't work for me. I don't feel motivated about anything anymore. I don't like playing sports, any instruments, or particpating in clubs. I've completely given up on studying now, too. I've started to hate talking to people and I spend all my time on my phone or laptop. I hate everythign. I'm sorry. I feel pathetic and worthless. I thought it could go away or find something that could help me, but I was wrong." *You <i>are</i> pathetic*<br>
+    "I'm here for you. I can help you. We can talk more later okay?"<br>
+    "Ok." <br>
+    Do you want to confess your feelings? *You really shouldn't. I've told you before, she's too good for you. It'll never happen.*<br>
+    <button class= "block" onclick="confesstoL()">Yes</button><br>
+    <button class= "block" onclick="dontconfesstoL()">No</button>
+  </div>
+
+  <!--attempt to confess-->
+
+  <div id="confessornot_noPill" style="display:none">
+    "Hey Laura..."<br>
+    (if you want to confess, click "Confess" until you are able to confess.)<br>
+    <button class= "block" onclick="tellLfeelings_noPill()">Confess</button><br>
+    <button class= "block" onclick="dontconfesstoL()">Give up</button>
+  </div>
+
+  <div id="terrible_ok_noPill" style="display:none">
+    "I'm okay. Just not a good weekend. I'm pretty tired, too," you lie.<br>
+    "Oh, that's good. If you ever need to talk, I'm right here." She gives you a really sweet and geniune smile. You can't help but wish you could tell her anything, but something keeps holding you back.<br>
+    "Thanks." You smile back at her. It's the realest one you've given anyone in a while.<br>
+    Do you want to confess your feelings? *You really shouldn't. I've told you before, she's too good for you. It'll never happen.*<br>
+    <button class= "block" onclick="confesstoL()">Yes</button><br>
+    <button class= "block" onclick="dontconfesstoL()">No</button>
+  </div>
+
+  <div id="whyyoucare_nopills" style="display:none">
+    "Why do you care?" You say coldly.<br>
+    "Damn. Sorry I asked," she turns around and gets ready for class. <br>
+    *Nice one. You're trash you know that? We don't need anyone anyways.*<br>
+    Do you want to confess your feelings? *You really shouldn't. I've told you before, she's too good for you. It'll never happen.*<br>
+    <button class= "block" onclick="confesstoL_whycare()">Yes</button><br>
+    <button class= "block" onclick="dontconfesstoL_whycare()">No</button>
+  </div>
+
+  <div id="confessornotwhycare_noPill" style="display:none">
+    "Hey Laura..."<br>
+    (if you want to confess, click "Confess" until you are able to confess.)<br>
+    <button class= "block" onclick="tellLfeelingswhycare_noPill()">Confess</button><br>
+    <button class= "block" onclick="dontconfesstoL_whycare()">Give up</button>
+  </div>
+
+  <script>
+    var notok = 0
+    var imok = 0
+    var confess = 0
+    var noconfessnopills = 0
+
+    function notokL_noPill() {
+      if (notok == 0) {
+        document.getElementById("terriblethisweekend_nopill").style.display = 'none';
+        document.getElementById("askforhelpL_noPill").style.display = 'block';
+      }
+    }
+
+    function tryforhelp_noPill() {
+      var a = document.getElementById("terrible_notok_noPill");
+      var n = document.getElementById("askforhelpL_noPill");
+      var b = document.getElementById("terrible_ok_noPill");
+      if(typeof(Storage) !== "undefined") {
+          if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            if(sessionStorage.clickcount >= 50) {
+              a.style.display = 'block';
+              n.style.display = 'none';
+            }
+          }
+          else {
+            sessionStorage.clickcount = 1;
+          }
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+    }
+
+    function imokL_noPill() {
+      if(imok == 0) {
+        document.getElementById("terrible_ok_noPill").style.display = 'block';
+        document.getElementById("terriblethisweekend_nopill").style.display = 'none';
+        document.getElementById("askforhelpL_noPill").style.display = 'none';
+      }
+    }
+
+    function confesstoL() {
+      var cl = document.getElementById("confessornot_noPill");
+      var fineweekend = document.getElementById("imfinethisweekend_nopill");
+      var tnok = document.getElementById("terrible_notok_noPill");
+      var tok = document.getElementById("terrible_ok_noPill");
+        if (confess == 0) {
+          cl.style.display = 'block';
+          tnok.style.display = 'none';
+          tok.style.display = 'none';
+          fineweekend.style.display = 'none';
+        }
+      }
+
+    function tellLfeelings_noPill() {
+      var cl = document.getElementById("confesstoL");
+      var nocl = document.getElementById("confessornot_noPill")
+        if(typeof(Storage) !== "undefined") {
+          if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            if(sessionStorage.clickcount >= 75) {
+              cl.style.display = 'block';
+              nocl.style.display = 'none';}
+          }
+          else {
+            sessionStorage.clickcount = 1;
+          }
+      }
+    }
+
+     function dontconfesstoL() {
+      var nocl = document.getElementById("dontconfesstoL");
+      var tok = document.getElementById("terrible_ok_noPill");
+      var tnok = document.getElementById("terrible_notok_noPill");
+      var conotnp = document.getElementById("confessornot_noPill");
+      var fineweekend = document.getElementById("imfinethisweekend_nopill");
+      if(noconfessnopills == 0) {
+        nocl.style.display = 'block';
+        tnok.style.display = 'none';
+        tok.style.display = 'none';
+        conotnp.style.display = 'none';
+        fineweekend.style.display = 'none';}
+      }
+
+      function confesstoL_whycare() {
+        var cl = document.getElementById("confessornotwhycare_noPill");
+        var whycarenp = document.getElementById("whyyoucare_nopills");
+          if (confess == 0) {
+            cl.style.display = 'block';
+            whycarenp.style.display = 'none';
+          }
+      }
+
+      function tellLfeelingswhycare_noPill() {
+        var cl = document.getElementById("confesstoL_whycare");
+        var nocl = document.getElementById("confessornotwhycare_noPill")
+          if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+              sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+              if(sessionStorage.clickcount >= 50) {
+                cl.style.display = 'block';
+                nocl.style.display = 'none';}
+            }
+            else {
+              sessionStorage.clickcount = 1;
+            }
+        }
+      }
+
+       function dontconfesstoL_whycare() {
+        var dclwc = document.getElementById("dontconfesstoLwhycare");
+        var wycnp = document.getElementById("whyyoucare_nopills");
+        var confwc = document.getElementById("confessornotwhycare_noPill");
+        if(noconfessnopills == 0) {
+          dclwc.style.display = 'block';
+          wycnp.style.display = 'none';
+          confwc.style.display = 'none';
+        }
+      }
+
+
+  </script>
+
+  <div id="confesstoL" style="display:none">
+    "We’ve been friends for a while, and I was wondering if you’d like to hang out sometime. Just the two of us?" you say nervously. In the seconds she takes to respond, your palms start to sweat and you begin to regret you asked. Your heart beats faster and your mind tells you repeatedly "No one wants you. No one wants you. No one wants you..."<br>
+    "I'd love to. That'll be really cool. I'm free on Saturday," she says with a big smile.
+    "Saturday it is." You've never felt this way in a long time. You can't help but smile and thank her. Afterwards, she turns back around and you continue your day. It's the first time in a while you feel motivated. You feel empowered to do things, like try a sport find a job.<br>
+    A job... You remember you have a job interview today for an internship that is an hour after school ends.<br>
+    ----the day continues----<br>
+    On your way out of school, your friend Kevin walks up to you.<br>
+    "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+    Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+    <button class= "block" onclick="talktoKevin()">Yes</button><br>
+    <button class= "block" onclick="donttalktoKevin()">No</button>
+  </div>
+
+  <div id="dontconfesstoL" style="display:none">
+    "We should get ready for class," you say hesitantly.<br>
+    Laura nods and turns around as the teacher prepares to teach the class. You stare at her head the entire time and zone out. Next thing you know the bell rings for the next period.<br>
+    ----the day continues as a haze----<br>
+    After your last class, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+    "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+    Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+    <button class= "block" onclick="talktoKevin()">Yes</button><br>
+    <button class= "block" onclick="donttalktoKevin()">No</button>
+  </div>
+
+  <div id="confesstoL_whycare" style="display:none">
+    "We’ve been friends for a while, and..." <br>
+    Laura ignores you and pays attention to the teacher as she prepares to teach the class.<br>
+    *Did you really think she'd like you after that?*<br>
+    ----the day continues----<br>
+    On your way out of school, your friend Kevin walks up to you.<br>
+    "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+    *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+    <button class= "block" onclick="talktoKevin()">Yes</button><br>
+    <button class= "block" onclick="donttalktoKevin()">No</button>
+  </div>
+
+  <div id="dontconfesstoLwhycare" style="display:none">
+    "Nevermind." She didn't even notice you when you said hi.<br>
+    *In your dreams. Nice job chasing her away. She'll probably hate you forever*<br>
+    ----the day continues as a haze----<br>
+    After your last class, your phone buzzes to remind you about your job interview later. On your way out of school, your friend Kevin walks up to you.<br>
+    "H-hey. Can I talk to you for a bit? I just have to tell you something," he says to you frantically.<br>
+    Do you want to talk? *Remember you have a job interview in an hour. You need time to get home, take a shower and get dressed.*<br>
+    <button class= "block" onclick="talktoKevin()">Yes</button><br>
+    <button class= "block" onclick="donttalktoKevin()">No</button>
+  </div>
+
+  <script>
+    var donttalkK = 0;
+    var dotalkK = 0;
+
+    function talktoKevin() {
+      if (dotalkK == 0) {
+        document.getElementById("helpKevin_noPill").style.display = 'block';
+        document.getElementById("confesstoL").style.display = 'none';
+        document.getElementById("dontconfesstoL").style.display = 'none';
+        document.getElementById("confesstoL_whycare").style.display = 'none';
+        document.getElementById("dontconfesstoLwhycare").style.display = 'none';
+        document.getElementById("confessnopills").style.display = 'none';
+        document.getElementById("dontconfessnopills").style.display = 'none';
+      }
+    }
+
+    function donttalktoKevin() {
+      if (donttalkK == 0) {
+        document.getElementById("donthelpKevin_noPill").style.display = 'block';
+        document.getElementById("confesstoL").style.display = 'none';
+        document.getElementById("dontconfesstoL").style.display = 'none';
+        document.getElementById("confesstoL_whycare").style.display = 'none';
+        document.getElementById("dontconfesstoLwhycare").style.display = 'none';
+        document.getElementById("confessnopills").style.display = 'none';
+        document.getElementById("dontconfessnopills").style.display = 'none';
+      }
+    }
+  </script>
+
+  <div id="donthelpKevin_noPill" style="display:none">
+    "Sorry Kev, I have a really imporant job interview. I have to get there as fast as possible. Maybe next time, okay?" you say in a hurry.<br>
+    "Oh, ok. I'm sorry. Sure, maybe later." Kevin's eyes water up and he turns away wiht his head down.<br>
+    *Why? What type of person are you? How do you not even care?*<br>
+    You continue to head out of school.<br>
+    Your mom picks you up and drive you home, then, get ready for the interview. You make it just in time, and your mom wishes you good luck.<br>
+    You walk into the office. You feel a little nervous, but you’re determined to succeed. It’s the most motivated you’ve felt in a while and today was above average. Getting this internship would not only put extra money in your pocket, it would also look great on your college résumé.<br>
+    The manager is waiting outside and guides you into his office.<br>
+    <button class= "block" onclick="interviewgoodcondition_noPill()">Continue</button>
+  </div>
+
+  <!--comfort Kevin-->
+  <div id="helpKevin_noPill" style="display:none">
+    "Sure. What do you want to talk about?" you say. You gesture to the side of the hall and the two of you move over.<br>
+    "Well, I just haven't been feeling great recently. You know what I mean? I just feel like everything is going downhill. I feel tired all the time and nothing is fun anymore. Is that normal?"<br>
+    <button class="block" onclick="normalKevin_noPill()">Yes</button><br>
+    <button class="block" onclick="notnormalKevin_noPill()">No</button>
+  </div>
+
+  <script>
+    var yesnormal = 0;
+    var notnormal = 0;
+
+    function normalKevin_noPill() {
+      if (yesnormal == 0) {
+        document.getElementById("itsnormal_noPill").style.display = 'block';
+        document.getElementById("helpKevin_noPill").style.display = 'none';
+      }
+    }
+
+
+    function notnormalKevin_noPill() {
+      if (notnormal == 0) {
+        document.getElementById("itsnotnormal_noPill").style.display = 'block';
+        document.getElementById("helpKevin_noPill").style.display = 'none';
+      }
+    }
+
+  </script>
+
+  <div id="itsnormal_noPill" style="display:none">
+    "So many people know how you feel Kevin. I know how you feel," You tell him sincerly.<br>
+    "Okay, I was just worried. I'm really scared. I feel nothing a lot of the time. Sometimes, I look forward to nothing. My grades are plummeting and I want to give up on college and the SATs. All my friends are so busy all the time, I don't want to waste their time," he says with tears in his eyes. <br>
+    This all feels so familiar to you. You sympathize with Kevin. You know exactly what he's going through and you feel like you should help him get through this.<br>
+    "Everything is going to be okay, Kevin. I'm your friend. I'm here for you and I care about you a lot. I really want to help you," you tell him. You then hug him and say, "Everything will be all right."<br>
+    The two of you talk for 30 minutes, and afterwards your mom drives you home to get ready. The entire ride home, she nags you about how late you are. You don't tell her what happened to Kevin because you feel like it is not her business.<br>
+    At the office, you look like a mess. You're hair is frizzy, your shirt is wrinkled, your socks don't even match. You run to the manager's office and he looks annoyed.<br>
+    <button class="block" onclick="interviewbadcondition_noPill()">Continue</button><br>
+  </div>
+
+  <div id="itsnotnormal_noPill" style="display:none">
+    "I don't know what you mean," You lie to him.<br>
+    This all feels so familiar to you, yet you don't sympathize with him. You know exactly what he's going through, but you help him.<br>
+    *Why? What type of person are you? How do you not even care?*
+    "Oh, okay. I don't want to waste your time then, I guess. See you tomorrow." Kevin's eyes water up and he turns away wiht his head down.<br>
+    Your mom picks you up and drive you home, then, get ready for the interview. You make it just in time, and your mom wishes you good luck.<br>
+    You walk into the office. You feel a little nervous, but you’re determined to succeed. It’s the most motivated you’ve felt in a while and today was above average. Getting this internship would not only put extra money in your pocket, it would also look great on your college résumé.<br>
+    The manager is waiting outside and guides you into his office.<br>
+    <button class="block" onclick="interviewgoodcondition_noPill()">Continue</button>
+</div>
+
+<script>
+  var good = 0;
+  var bad = 0;
+
+  function interviewbadcondition_noPill() {
+    if (bad == 0) {
+      document.getElementById("failedinterview").style.display = 'block';
+      document.getElementById("itsnormal_noPill").style.display = 'none';
+      document.getElementById("donthelpKevin_noPill").style.display = 'none';}
+    }
+
+
+  function interviewgoodcondition_noPill() {
+    if (good == 0) {
+      document.getElementById("successfulinterview").style.display = 'block';
+      document.getElementById("itsnotnormal_noPill").style.display = 'none';
+      document.getElementById("donthelpKevin_noPill").style.display = 'none';}}
+
+
+</script>
+
+<div id="failedinterview" style="display:none">
+  You’ve been working so hard in the last few months. Getting this internship would not only put extra money in your pocket, it would also look great on your college résumé.<br>
+  “Good afternoon. Sorry for being late sir,” you say.<br>
+  “"Hello. I'm Mr. Yonehara. Just remember, we value punctuality here. Well we have 20 minutes left, so as long as we get all the points down we’ll be good. Try not to worry about it.”
+  The interview goes well mostly, but you can tell in his face that he is annoyed with how late you were. <br>
+  * I bet he disapproves of the way you look, your hunched back, your nervousness, and how you’ve yawned about 5 times already.*<br>
+  You answer everything as best as you can, but he doesn’t seem to like your personality. After the 20 minutes, he tells you, “I’m sorry, I dont think you are fit for this company. I wish you luck for the future. You have so much potential.”
+  *He sounds so fake. He just doesn't want to hurt your feelings. You're so worthless. You can't even get this simple job.*
+  On your way out,  you feel a throbbing in your head again. Your hands begin to shake and you lose control of your body. *There's nothing for you anymore. You hurt everyone and you hurt yourself. <i>You are nothing.</i>*<br>
+  On the way home, your mom still seems annoyed with how late you are, but tries to comfort you. "There will be so many new opportunities, but you just need to be on time okay? See what happens?"<br>
+  You tone her out throughout the entire car ride home. <br>
+  <button class= "block" onclick="gohomebad_noPill()">Continue</button>
+</div>
+
+<div id="successfulinterview" style="display:none">
+  "Good afternoon, sir” you say politely.<br>
+  "Hello. I'm Mr. Yonehara. I'm so glad you're on time. We value punctuality here. So why would you like an internship? More than just money I assume?" He says with a smile.<br>
+  You smile back and try to be honest with him. "I really like what Yuki Tech Industries does. I've been interested in innovating technology from a young age and I would love to have access to the resources that your company can provide..."<br>
+  The interview continues for 30 minutes, and Mr. Yonehara seems to really like you. He is impressed by everything you say, and you start to feel confident about yourself. It's like a person of authority finally approves of you. You're finally able to push the voice inside your head back even without your medication.<br>
+  Soon he stands up and shakes your hand.<br>
+  "It was a pleasure meeting you. You're the best candidate we've interviewed so far, and one of the last ones. I think it's safe to say you have a very high chance of being accepted into our intership program."<br>
+  You feel another rush of joy flow through you. When your mom picks you up, she is esctatic over this fantastic news.<br>
+  "I'm so proud of you, honey. Let's go out for dinner on Friday to celebrate." She smiles are cheers for you. She's proud of you. She loves you. You start to feel okay. Everything feels like its coming into place.<br>
+  <button class= "block" onclick="gohomegood_noPill()">Continue</button>
+</div>
+
+<script>
+  var good = 0;
+  var bad = 0;
+
+  function gohomegood_noPill() {
+    if (good == 0) {
+      document.getElementById("homehappy_noPill").style.display = 'block';
+      document.getElementById("successfulinterview").style.display = 'none';}
+  }
+
+  function gohomebad_noPill() {
+    if (bad == 0) {
+      document.getElementById("homesad_noPill").style.display = 'block';
+      document.getElementById("failedinterview").style.display = 'none';}
+  }
+
+</script>
+
+<div id="homehappy_noPill" style="display:none">
+  You get home and finsh up your homework. You spend time with your family over dinner and you can't help feel relaxed for once. Your mom's so proud of you and loves you, even after all the times you hurt her. You think of everything that has happened today, and you think maybe you'll be okay, even if you feel guilty about leaving Kevin there all alone.<br>
+  That night, you lay down in your bed. The darkness is soothing, and being alone helps you think. For once you're feel something. Hope. The hope that one day things can change.<br>
+  <h2><b>THE END</b></h2>
+</div>
+
+<div id="homesad_noPill" style="display:none">
+  You go home and lock yourself in your room. You don't want to hear your family's disappoinment. You feel empty. Today wasn't the worst, but things like to throw you off track. You close your eyes and your heart begins to beat faster. Before you know it, your eyes are flooding with tears and you palms start to sweat. Your heartbeat picks up to a thumping in your chest. You curl up into a ball as your chest explodes with an unsettling burst of heat.<br>
+  Your mind goes blank and all you feel is the hot tears pouring down your cheeks. Your breathing becomes heavy to the point you can't even feel the air coming in. You clutch the sheets under you and yell out a cry of pain. Nothing is under your control anymore. Your body flails around as you scream for it stop. Your mom comes to your room and bangs on your door.<br>
+  "Honey are you ok?" she says, but you can't answer her. She opens the door and holds you in her arms. It calms you down a bit, but moments later you black out. You wake up the next day in the hospital. Your family is sitting by you, and as you move to get up the all stand up to comfort you.<br>
+  You still feel nothing. Nothing matters to you. You think the world would be a better place without you. You can't help but think of the hospital bills and the cost of your room. What's the point of any of this? Why go another day?<br>
+  Your mom hugs you and you feel a slight sense of comfort. "I was so worried," she says. "I'm so sorry I didn't help sooner."<br>
+  You just stare the walls behind her. Feeling nothing but her warmth. "Tomorrow is a new day," you think. "A new day filled with pills and endless emptiness."<br>
+  <h2><b>THE END</b></h2>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+
+}
+</script>
+
+</body>
+</html>
